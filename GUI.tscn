@@ -56,31 +56,33 @@ text = "Score:"
 
 [node name="Score" type="Label" parent="."]
 layout_mode = 0
-offset_left = 299.0
+offset_left = 289.0
 offset_top = 33.0
-offset_right = 309.0
-offset_bottom = 52.0
-scale = Vector2(5, 5)
+offset_right = 379.0
+offset_bottom = 113.0
+theme_override_colors/font_color = Color(0.898039, 0.819608, 0, 1)
 theme_override_fonts/font = ExtResource("2_i4rcp")
+theme_override_font_sizes/font_size = 80
 text = "0"
 script = ExtResource("3")
 
 [node name="LevelLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 369.0
-offset_top = 33.0
-offset_right = 587.0
-offset_bottom = 132.0
+offset_left = 397.0
+offset_top = 31.0
+offset_right = 615.0
+offset_bottom = 130.0
 theme_override_fonts/font = ExtResource("2_i4rcp")
 theme_override_font_sizes/font_size = 80
 text = "Level:"
 
 [node name="Level" type="Label" parent="."]
 layout_mode = 0
-offset_left = 611.0
-offset_top = 34.0
-offset_right = 757.0
-offset_bottom = 133.0
+offset_left = 627.0
+offset_top = 33.0
+offset_right = 773.0
+offset_bottom = 132.0
+theme_override_colors/font_color = Color(0.784314, 0, 0.709804, 1)
 theme_override_fonts/font = ExtResource("2_i4rcp")
 theme_override_font_sizes/font_size = 80
 text = "1"
