@@ -1,4 +1,6 @@
-res://Spawner.gd
 res://default_env.tres
 res://World.tscn
-res://World.gd
+res://Level.gd
+res://GUI.tscn
+res://GUI.gd
+res://Spawner.gd

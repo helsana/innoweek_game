@@ -1,12 +1,16 @@
-[gd_scene load_steps=9 format=3 uid="uid://rgsd8s858iep"]
+[gd_scene load_steps=10 format=3 uid="uid://rgsd8s858iep"]
 
 [ext_resource type="Texture2D" uid="uid://c022fsfm044io" path="res://Background.png" id="1"]
 [ext_resource type="FontFile" uid="uid://d0t3remmj46qn" path="res://Fonts/operational amplifier.ttf" id="2"]
 [ext_resource type="Script" path="res://Score.gd" id="3"]
 [ext_resource type="Texture2D" uid="uid://ymdeb8ik0e0t" path="res://Restart.png" id="4"]
+[ext_resource type="Script" path="res://Level.gd" id="4_xqwcc"]
 [ext_resource type="Script" path="res://Button.gd" id="5"]
 
 [sub_resource type="FontFile" id="3"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 fallbacks = Array[Font]([ExtResource("2")])
 face_index = null
 embolden = null
@@ -37,6 +41,9 @@ cache/0/250/0/kerning_overrides/300/0 = Vector2(0, 0)
 cache/0/250/0/kerning_overrides/250/0 = Vector2(0, 0)
 
 [sub_resource type="FontFile" id="1"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 fallbacks = Array[Font]([ExtResource("2")])
 face_index = null
 embolden = null
@@ -127,6 +134,9 @@ cache/0/80/0/kerning_overrides/20/0 = Vector2(0, 0)
 cache/0/80/0/kerning_overrides/80/0 = Vector2(0, 0)
 
 [sub_resource type="FontFile" id="2"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 fallbacks = Array[Font]([ExtResource("2")])
 face_index = null
 embolden = null
@@ -144,6 +154,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="GameOver" type="TextureRect" parent="."]
 layout_mode = 1
@@ -187,12 +199,32 @@ text = "Score:"
 layout_mode = 0
 offset_left = 270.0
 offset_top = 37.0
-offset_right = 310.0
+offset_right = 290.0
 offset_bottom = 60.0
 scale = Vector2(5, 5)
 theme_override_fonts/font = SubResource("2")
 text = "0"
 script = ExtResource("3")
+
+[node name="LevelLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 406.0
+offset_top = 38.0
+offset_right = 555.0
+offset_bottom = 137.0
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 80
+text = "Level:"
+
+[node name="Level" type="Label" parent="."]
+layout_mode = 0
+offset_left = 594.0
+offset_top = 41.0
+offset_right = 740.0
+offset_bottom = 140.0
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 80
+script = ExtResource("4_xqwcc")
 
 [node name="Restart" type="Button" parent="."]
 layout_mode = 1

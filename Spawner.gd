@@ -6,13 +6,9 @@ var spawned_item : PackedScene = null
 
 func _ready():
 	print("Spawner")
-	#$LevelTimer.start()
 
-const SPAWN_TIME = 1.0
 var spawn_time = 1.0
 var spawn_time_left = spawn_time
-#var spawn_time_left : float = SPAWN_TIME
-	
 
 func spawn_item():
 	var current_spawned_item = spawned_item.instantiate()
