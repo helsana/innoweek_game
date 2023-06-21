@@ -6,9 +6,13 @@ var spawned_item : PackedScene = null
 
 func _ready():
 	print("Spawner")
+	#$LevelTimer.start()
 
 const SPAWN_TIME = 1.0
-var spawn_time_left : float = SPAWN_TIME
+var spawn_time = 1.0
+var spawn_time_left = spawn_time
+#var spawn_time_left : float = SPAWN_TIME
+	
 
 func spawn_item():
 	var current_spawned_item = spawned_item.instantiate()
@@ -23,6 +27,12 @@ func _process(delta):
 	if get_parent().game_is_running: 
 		if spawn_time_left < .0:
 			spawn_item()
-			spawn_time_left = SPAWN_TIME
+			spawn_time_left = spawn_time
 		else:
 			spawn_time_left -= delta
+			
+
+func _on_level_timer_timeout():
+	print("Timeout: ", spawn_time)
+	if spawn_time > 0.1:
+		spawn_time -= 0.1
