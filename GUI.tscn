@@ -1,152 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://rgsd8s858iep"]
+[gd_scene load_steps=7 format=3 uid="uid://rgsd8s858iep"]
 
 [ext_resource type="Texture2D" uid="uid://c022fsfm044io" path="res://Background.png" id="1"]
-[ext_resource type="FontFile" uid="uid://d0t3remmj46qn" path="res://Fonts/operational amplifier.ttf" id="2"]
+[ext_resource type="FontFile" uid="uid://bbr6hbij3kfni" path="res://Fonts/akkurat_normal.ttf" id="2_i4rcp"]
 [ext_resource type="Script" path="res://Score.gd" id="3"]
 [ext_resource type="Texture2D" uid="uid://ymdeb8ik0e0t" path="res://Restart.png" id="4"]
 [ext_resource type="Script" path="res://Level.gd" id="4_xqwcc"]
 [ext_resource type="Script" path="res://Button.gd" id="5"]
-
-[sub_resource type="FontFile" id="3"]
-subpixel_positioning = 0
-msdf_pixel_range = 14
-msdf_size = 128
-fallbacks = Array[Font]([ExtResource("2")])
-face_index = null
-embolden = null
-transform = null
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/16/0/kerning_overrides/300/0 = Vector2(0, 0)
-cache/0/16/0/kerning_overrides/250/0 = Vector2(0, 0)
-cache/0/300/0/ascent = 0.0
-cache/0/300/0/descent = 0.0
-cache/0/300/0/underline_position = 0.0
-cache/0/300/0/underline_thickness = 0.0
-cache/0/300/0/scale = 1.0
-cache/0/300/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/300/0/kerning_overrides/300/0 = Vector2(0, 0)
-cache/0/300/0/kerning_overrides/250/0 = Vector2(0, 0)
-cache/0/250/0/ascent = 0.0
-cache/0/250/0/descent = 0.0
-cache/0/250/0/underline_position = 0.0
-cache/0/250/0/underline_thickness = 0.0
-cache/0/250/0/scale = 1.0
-cache/0/250/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/250/0/kerning_overrides/300/0 = Vector2(0, 0)
-cache/0/250/0/kerning_overrides/250/0 = Vector2(0, 0)
-
-[sub_resource type="FontFile" id="1"]
-subpixel_positioning = 0
-msdf_pixel_range = 14
-msdf_size = 128
-fallbacks = Array[Font]([ExtResource("2")])
-face_index = null
-embolden = null
-transform = null
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/16/0/kerning_overrides/2/0 = Vector2(0, 0)
-cache/0/16/0/kerning_overrides/3/0 = Vector2(0, 0)
-cache/0/16/0/kerning_overrides/4/0 = Vector2(0, 0)
-cache/0/16/0/kerning_overrides/5/0 = Vector2(0, 0)
-cache/0/16/0/kerning_overrides/20/0 = Vector2(0, 0)
-cache/0/16/0/kerning_overrides/80/0 = Vector2(0, 0)
-cache/0/2/0/ascent = 0.0
-cache/0/2/0/descent = 0.0
-cache/0/2/0/underline_position = 0.0
-cache/0/2/0/underline_thickness = 0.0
-cache/0/2/0/scale = 1.0
-cache/0/2/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/2/0/kerning_overrides/2/0 = Vector2(0, 0)
-cache/0/2/0/kerning_overrides/3/0 = Vector2(0, 0)
-cache/0/2/0/kerning_overrides/4/0 = Vector2(0, 0)
-cache/0/2/0/kerning_overrides/5/0 = Vector2(0, 0)
-cache/0/2/0/kerning_overrides/20/0 = Vector2(0, 0)
-cache/0/2/0/kerning_overrides/80/0 = Vector2(0, 0)
-cache/0/3/0/ascent = 0.0
-cache/0/3/0/descent = 0.0
-cache/0/3/0/underline_position = 0.0
-cache/0/3/0/underline_thickness = 0.0
-cache/0/3/0/scale = 1.0
-cache/0/3/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/3/0/kerning_overrides/2/0 = Vector2(0, 0)
-cache/0/3/0/kerning_overrides/3/0 = Vector2(0, 0)
-cache/0/3/0/kerning_overrides/4/0 = Vector2(0, 0)
-cache/0/3/0/kerning_overrides/5/0 = Vector2(0, 0)
-cache/0/3/0/kerning_overrides/20/0 = Vector2(0, 0)
-cache/0/3/0/kerning_overrides/80/0 = Vector2(0, 0)
-cache/0/4/0/ascent = 0.0
-cache/0/4/0/descent = 0.0
-cache/0/4/0/underline_position = 0.0
-cache/0/4/0/underline_thickness = 0.0
-cache/0/4/0/scale = 1.0
-cache/0/4/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/4/0/kerning_overrides/2/0 = Vector2(0, 0)
-cache/0/4/0/kerning_overrides/3/0 = Vector2(0, 0)
-cache/0/4/0/kerning_overrides/4/0 = Vector2(0, 0)
-cache/0/4/0/kerning_overrides/5/0 = Vector2(0, 0)
-cache/0/4/0/kerning_overrides/20/0 = Vector2(0, 0)
-cache/0/4/0/kerning_overrides/80/0 = Vector2(0, 0)
-cache/0/5/0/ascent = 0.0
-cache/0/5/0/descent = 0.0
-cache/0/5/0/underline_position = 0.0
-cache/0/5/0/underline_thickness = 0.0
-cache/0/5/0/scale = 1.0
-cache/0/5/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/5/0/kerning_overrides/2/0 = Vector2(0, 0)
-cache/0/5/0/kerning_overrides/3/0 = Vector2(0, 0)
-cache/0/5/0/kerning_overrides/4/0 = Vector2(0, 0)
-cache/0/5/0/kerning_overrides/5/0 = Vector2(0, 0)
-cache/0/5/0/kerning_overrides/20/0 = Vector2(0, 0)
-cache/0/5/0/kerning_overrides/80/0 = Vector2(0, 0)
-cache/0/20/0/ascent = 0.0
-cache/0/20/0/descent = 0.0
-cache/0/20/0/underline_position = 0.0
-cache/0/20/0/underline_thickness = 0.0
-cache/0/20/0/scale = 1.0
-cache/0/20/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/20/0/kerning_overrides/2/0 = Vector2(0, 0)
-cache/0/20/0/kerning_overrides/3/0 = Vector2(0, 0)
-cache/0/20/0/kerning_overrides/4/0 = Vector2(0, 0)
-cache/0/20/0/kerning_overrides/5/0 = Vector2(0, 0)
-cache/0/20/0/kerning_overrides/20/0 = Vector2(0, 0)
-cache/0/20/0/kerning_overrides/80/0 = Vector2(0, 0)
-cache/0/80/0/ascent = 0.0
-cache/0/80/0/descent = 0.0
-cache/0/80/0/underline_position = 0.0
-cache/0/80/0/underline_thickness = 0.0
-cache/0/80/0/scale = 1.0
-cache/0/80/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/80/0/kerning_overrides/2/0 = Vector2(0, 0)
-cache/0/80/0/kerning_overrides/3/0 = Vector2(0, 0)
-cache/0/80/0/kerning_overrides/4/0 = Vector2(0, 0)
-cache/0/80/0/kerning_overrides/5/0 = Vector2(0, 0)
-cache/0/80/0/kerning_overrides/20/0 = Vector2(0, 0)
-cache/0/80/0/kerning_overrides/80/0 = Vector2(0, 0)
-
-[sub_resource type="FontFile" id="2"]
-subpixel_positioning = 0
-msdf_pixel_range = 14
-msdf_size = 128
-fallbacks = Array[Font]([ExtResource("2")])
-face_index = null
-embolden = null
-transform = null
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
 [node name="GUI" type="Control"]
 custom_minimum_size = Vector2(1024, 600)
@@ -179,7 +38,7 @@ offset_right = 419.0
 offset_bottom = 258.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("3")
+theme_override_fonts/font = ExtResource("2_i4rcp")
 theme_override_font_sizes/font_size = 250
 text = "Game Over"
 horizontal_alignment = 1
@@ -187,43 +46,44 @@ vertical_alignment = 1
 
 [node name="ScoreLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 69.0
-offset_top = 35.0
-offset_right = 215.0
-offset_bottom = 134.0
-theme_override_fonts/font = SubResource("1")
+offset_left = 34.0
+offset_top = 29.0
+offset_right = 272.0
+offset_bottom = 109.0
+theme_override_fonts/font = ExtResource("2_i4rcp")
 theme_override_font_sizes/font_size = 80
 text = "Score:"
 
 [node name="Score" type="Label" parent="."]
 layout_mode = 0
-offset_left = 270.0
-offset_top = 37.0
-offset_right = 290.0
-offset_bottom = 60.0
+offset_left = 299.0
+offset_top = 33.0
+offset_right = 309.0
+offset_bottom = 52.0
 scale = Vector2(5, 5)
-theme_override_fonts/font = SubResource("2")
+theme_override_fonts/font = ExtResource("2_i4rcp")
 text = "0"
 script = ExtResource("3")
 
 [node name="LevelLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 406.0
-offset_top = 38.0
-offset_right = 555.0
-offset_bottom = 137.0
-theme_override_fonts/font = ExtResource("2")
+offset_left = 369.0
+offset_top = 33.0
+offset_right = 587.0
+offset_bottom = 132.0
+theme_override_fonts/font = ExtResource("2_i4rcp")
 theme_override_font_sizes/font_size = 80
 text = "Level:"
 
 [node name="Level" type="Label" parent="."]
 layout_mode = 0
-offset_left = 594.0
-offset_top = 41.0
-offset_right = 740.0
-offset_bottom = 140.0
-theme_override_fonts/font = ExtResource("2")
+offset_left = 611.0
+offset_top = 34.0
+offset_right = 757.0
+offset_bottom = 133.0
+theme_override_fonts/font = ExtResource("2_i4rcp")
 theme_override_font_sizes/font_size = 80
+text = "1"
 script = ExtResource("4_xqwcc")
 
 [node name="Restart" type="Button" parent="."]
