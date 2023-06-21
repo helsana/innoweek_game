@@ -1,6 +1,7 @@
 extends Button
 
 func _on_Button_pressed():
+	get_node("/root/World/BackgroundMusic").play()
 	get_parent().get_node("Restart").visible = false
 	get_parent().get_node("Score").text = str(0)
 	get_parent().get_parent().player.score = 0
