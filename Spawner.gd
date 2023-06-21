@@ -3,6 +3,7 @@ extends Node2D
 @export 
 var spawned_item : PackedScene = null
 @export var test = []
+#@export var spawn_time = 1.0
 
 func _ready():
 	print("Spawner")
@@ -32,3 +33,6 @@ func _on_level_timer_timeout():
 	print("Timeout: ", spawn_time)
 	if spawn_time > 0.1:
 		spawn_time -= 0.1
+
+func reset_spawn_time():
+	spawn_time = 1.0

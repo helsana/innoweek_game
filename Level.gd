@@ -15,3 +15,7 @@ func _process(delta):
 func on_level_change():
 	level += 1
 	text = str(level)
+	
+func reset_level():
+	level = 1
+	text = str(level)

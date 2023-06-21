@@ -19,6 +19,7 @@ func manage_collision():
 	if !world.game_is_running:
 		get_node("/root/World/BackgroundMusic").stop()
 		get_node("/root/World/GameOver").play()
+		get_node("/root/World/LevelTimer").stop()
 		queue_free()
 	else:
 		# elif is a substitute for switch statement. if elif else
