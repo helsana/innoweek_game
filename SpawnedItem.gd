@@ -17,11 +17,14 @@ func _process(delta):
 
 func manage_collision():
 	if !world.game_is_running:
+		get_node("/root/World/BackgroundMusic").stop()
+		get_node("/root/World/GameOver").play()
 		queue_free()
 	else:
 		# elif is a substitute for switch statement. if elif else
 		if !is_collision_detected && position.distance_to(player.position) < COLLISION_DISTANCE:
 			is_collision_detected = true
+			get_node("/root/World/Collect").play()
 			player.score += 1
 			queue_free()
 		elif position.y > get_viewport().size.y:
