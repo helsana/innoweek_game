@@ -1,6 +1,7 @@
 res://default_env.tres
 res://World.tscn
-res://Level.gd
 res://GUI.tscn
+res://Level.gd
 res://GUI.gd
-res://Spawner.gd
+res://World.gd
+res://Button.gd
