@@ -26,12 +26,12 @@ func manage_collision():
 		if !is_collision_detected && position.distance_to(player.position) < COLLISION_DISTANCE:
 			is_collision_detected = true
 			get_node("/root/World/Collect").play()
+			Input.vibrate_handheld(10)
 			player.score += 1
 			queue_free()
 		elif position.y > get_viewport().size.y:
 			player.get_parent().game_is_running = false
+			Input.vibrate_handheld(500)
 			get_parent().get_parent().get_node("GUI").get_node("Restart").visible = true
 			get_parent().get_parent().get_node("GUI").get_node("GameOver").visible = true
 			queue_free()
-		#else:
-		#	modulate.a = max(sin(Time.get_ticks_msec() * .1), .5)
