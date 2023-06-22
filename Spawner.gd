@@ -3,7 +3,6 @@ extends Node2D
 @export 
 var spawned_item : PackedScene = null
 @export var test = []
-#@export var spawn_time = 1.0
 
 func _ready():
 	print("Spawner")

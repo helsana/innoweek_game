@@ -33,5 +33,5 @@ func manage_collision():
 			get_parent().get_parent().get_node("GUI").get_node("Restart").visible = true
 			get_parent().get_parent().get_node("GUI").get_node("GameOver").visible = true
 			queue_free()
-		else:
-			modulate.a = max(sin(Time.get_ticks_msec() * .1), .5)
+		#else:
+		#	modulate.a = max(sin(Time.get_ticks_msec() * .1), .5)
