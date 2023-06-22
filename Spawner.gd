@@ -4,9 +4,6 @@ extends Node2D
 var spawned_item : PackedScene = null
 @export var test = []
 
-func _ready():
-	print("Spawner")
-
 var spawn_time = 1.0
 var spawn_time_left = spawn_time
 
@@ -29,7 +26,6 @@ func _process(delta):
 			
 
 func _on_level_timer_timeout():
-	print("Timeout: ", spawn_time)
 	if spawn_time > 0.1:
 		spawn_time -= 0.1
 
