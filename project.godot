@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="test1"
+config/name="HelsiGame"
 run/main_scene="res://World.tscn"
 config/features=PackedStringArray("4.0")
-config/icon="res://icon.png"
+config/icon="res://helsi.png"
 
 [display]
 
